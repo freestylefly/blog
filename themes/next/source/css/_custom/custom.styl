@@ -1,0 +1,52 @@
+// Custom styles.
+//背景图
+body { 
+    background-image: url(/images/background.jpg);
+	//background:url(https://source.unsplash.com/random/1600x900);
+    background-attachment: fixed; // 不随屏幕滚动而滚动fixed,scroll,inherit
+    background-repeat: no-repeat; // 如果背景图不够屏幕大小则重复铺，改为no-repeat则表示不重复铺
+    background-size: cover; // contain等比例铺满屏幕 //cover拉伸铺满
+    background-position: 0% 20%;
+}
+
+.site-meta {
+    height: 200px;
+    background-image: url(/images/header.jpg);
+    background-size: cover;
+}
+
+//尾部
+.footer {
+  font-size: 15px  
+  background: rgba(255, 255, 255, 1.0);
+
+  +mobile() {
+    font-size: 12px
+  }
+}
+
+
+// Custom styles.
+code {
+    color: #ff7600;
+    background: #fbf7f8;
+    margin: 2px;
+}
+// 大代码块的自定义样式
+.highlight, pre {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 3px;
+}
+.highlight, code, pre {
+    border: 1px solid #d6d6d6;
+}
+/*
+.main-inner { 
+    margin-top: 60px;
+    padding: 60px 60px 60px 60px;
+    background: #fff;
+    opacity: 0.8;
+    min-height: 500px;
+}*/
+
