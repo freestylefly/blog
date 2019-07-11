@@ -1,13 +1,15 @@
+---
 layout: post
 title: hexo在GitHub上搭建个人博客
 date: 2019-07-10 21:25:30
-categories:搭建个人博客
-keywords:hexo，next
+categories: 搭建个人博客
+keywords: hexo, next
 tags:
 	- hexo
-	- github博客
 
-------
+---
+
+搭建免费个人博客并进行自定义配置，打造属于自己的个人世界。本系列文章在 <https://github.com/freestylefly/javaStudy> 持(huan)续(ying)更(jia)新(入)中，欢迎有兴趣的童鞋们关注。
 
 # 一、前言
 
