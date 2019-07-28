@@ -4,7 +4,7 @@
 
 # Site
 title: 苍 何
-subtitle: 喜欢一个人，始于颜值，敬于才华，合于性格，久于善良，终于人品。W我真的好想你，在每一个雨季，你选择遗忘的，是我最不舍的。W不怕万人阻挡，只怕自己投降。W成熟是给你陌生人看的，逗比是给朋友看的，幼稚是给喜欢的人看的。W人生当苦无妨，良人当归即可。W逝者如斯乎，不舍昼夜。
+subtitle: 我翻山越岭，才发现无人等候。W和梦想平等交易，和喧嚣保持距离。W希望你好，希望你顺利，即使小有坎坷，偶遇困顿也能化险为夷。W成熟是给你陌生人看的，逗比是给朋友看的，幼稚是给喜欢的人看的。W不要说了，我不会屈服。W刚刚又没忍住，往宇宙里发送了想你的脑电波。
 description: 你若晴天，我便安好。
 keywords: 苍何 苍何的博客
 author: 苍 何
@@ -31,6 +31,7 @@ skip_render:
   - love/**
   - loveshow/**
   - static/**
+  - showLove/**
 
 # Writing
 new_post_name: :year-:month-:day-:title.md # File name of new posts
@@ -98,7 +99,7 @@ deploy:
   type: git
   repo: 
     github: git@github.com:freestylefly/freestylefly.github.io.git
-    coding: git@git.coding.net:enfang/enfang.git
+    coding: git@e.coding.net:canghe/canghe.git
     gitee: git@gitee.com:itjyg/itjyg.git
   branch: master
   message: "我又更新了(〃'▽'〃)"
