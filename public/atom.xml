@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>苍 何</title>
   
-  <subtitle>我翻山越岭，才发现无人等候。W和梦想平等交易，和喧嚣保持距离。W希望你好，希望你顺利，即使小有坎坷，偶遇困顿也能化险为夷。W成熟是给你陌生人看的，逗比是给朋友看的，幼稚是给喜欢的人看的。W不要说了，我不会屈服。W刚刚又没忍住，往宇宙里发送了想你的脑电波。</subtitle>
+  <subtitle>我翻山越岭，终寻一人等候。W和梦想平等交易，和喧嚣保持距离。W希望你好，希望你顺利，即使小有坎坷，偶遇困顿也能化险为夷。W成熟是给你陌生人看的，逗比是给朋友看的，幼稚是给喜欢的人看的。W不要说了，我不会屈服。W刚刚又没忍住，往宇宙里发送了想你的脑电波。</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://freestylefly.github.io/"/>
@@ -287,6 +287,30 @@
   </entry>
   
   <entry>
+    <title>解决在 Eclipse 新建web项目没有自动生成 web.xml 和在新建 servlet 的时候自动生成 web.xml 配置</title>
+    <link href="http://freestylefly.github.io/2019/04/13/%E8%A7%A3%E5%86%B3%E5%9C%A8Eclipse%E6%96%B0%E5%BB%BAweb%E9%A1%B9%E7%9B%AE%E6%B2%A1%E6%9C%89%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90web.xml%E5%92%8C%E5%9C%A8%E6%96%B0%E5%BB%BAservlet%E7%9A%84%E6%97%B6%E5%80%99%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90web.xml%E9%85%8D%E7%BD%AE/"/>
+    <id>http://freestylefly.github.io/2019/04/13/解决在Eclipse新建web项目没有自动生成web.xml和在新建servlet的时候自动生成web.xml配置/</id>
+    <published>2019-04-12T16:00:00.000Z</published>
+    <updated>2019-10-04T15:43:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>本系列文章在 <a href="https://github.com/freestylefly/javaStudy" target="_blank" rel="noopener">https://github.com/freestylefly/javaStudy</a> 持(huan)续(ying)更(jia)新(ru)中，欢迎有兴趣的童鞋们关注。</p><h2 id="一、在Eclipse新建web项目没有自动生成web-xml解决办法"><a href="#一、在Eclipse新建web项目没有自动生成web-xml解决办法" class="headerlink" title="一、在Eclipse新建web项目没有自动生成web.xml解决办法"></a>一、在Eclipse新建web项目没有自动生成web.xml解决办法</h2><h2 id="方法一：在Eclipse新建web项目的时候重要参数上打勾"><a href="#方法一：在Eclipse新建web项目的时候重要参数上打勾" class="headerlink" title="方法一：在Eclipse新建web项目的时候重要参数上打勾"></a>方法一：在Eclipse新建web项目的时候重要参数上打勾</h2><p>1、file—new-Dynamic Web Project<br><img src="https://img-blog.csdnimg.cn/20181214160226360.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>2、next下一步<br><img src="https://img-blog.csdnimg.cn/20181214160315960.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>3、next下一步<br><img src="https://img-blog.csdnimg.cn/20181214160348211.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>4、关键：这里一定要打勾，默认是没有打勾的<img src="https://img-blog.csdnimg.cn/20181214160416976.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>5、建好后可以点开就有web.xml了</p><p><img src="https://img-blog.csdnimg.cn/20181214160544786.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h2 id="方法二：在已经建好的项目上加上web-xml"><a href="#方法二：在已经建好的项目上加上web-xml" class="headerlink" title="方法二：在已经建好的项目上加上web.xml"></a>方法二：在已经建好的项目上加上web.xml</h2><p> 1.项目名称右键—&gt;Properties:<br> <img src="https://img-blog.csdnimg.cn/20181214160700888.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 2.点击Project Facets，取消选中Dynamic Web Module,点击Apply<br> <img src="https://img-blog.csdnimg.cn/20181214160730677.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br> 3.重新选中Dynamic Web Module后，会出现Further configuration available…<br> <img src="https://img-blog.csdnimg.cn/20181214160754808.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p> 4.点击Further configuration available…，选中Generate web.xml deployment descriptor,点击ok,Apply后，在WEB-INF下生成了web.xml。<br> <img src="https://img-blog.csdnimg.cn/20181214160812893.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><h2 id="Eclipse在新建servlet的时候自动生成web-xml配置"><a href="#Eclipse在新建servlet的时候自动生成web-xml配置" class="headerlink" title="Eclipse在新建servlet的时候自动生成web.xml配置"></a>Eclipse在新建servlet的时候自动生成web.xml配置</h2><p>在新建web项目的时候：<br><img src="https://img-blog.csdnimg.cn/20181214161006245.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>我们新建默认用的是Tomact7.0,里面用的是servlet3.0版本默认的是使用注解配置，在新建dynamic web project 时，dynamic web module version选择2.5就ok了。<br>选择2.6即可<br><img src="https://img-blog.csdnimg.cn/20181214161120451.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>这样就自动生成了servlet的文本.xml的自动配置t</p><hr><h1 id="本文章已同步至我的GitHub仓库：Javastudy-期待您的加入-blush"><a href="#本文章已同步至我的GitHub仓库：Javastudy-期待您的加入-blush" class="headerlink" title="本文章已同步至我的GitHub仓库：Javastudy,期待您的加入:blush:"></a>本文章已同步至我的GitHub仓库：<a href="https://github.com/freestylefly/javaStudy" target="_blank" rel="noopener">Javastudy</a>,期待您的加入:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/github.jpg" width=""></p><h1 id="本文章已同步至苍何的个人博客-可以直接在博客上留言哦-blush"><a href="#本文章已同步至苍何的个人博客-可以直接在博客上留言哦-blush" class="headerlink" title="本文章已同步至苍何的个人博客,可以直接在博客上留言哦:blush:"></a>本文章已同步至<a href="https://freestylefly.github.io/">苍何的个人博客</a>,可以直接在博客上留言哦:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/myblog..png" width=""></p><h1 id="来我的微信公众号玩耍呗-blush"><a href="#来我的微信公众号玩耍呗-blush" class="headerlink" title="来我的微信公众号玩耍呗:blush:"></a>来我的微信公众号玩耍呗:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/weixingongzhonghao.jpg" width=""></p><h1 id="扫码无套路关注我的CSDN博客-blush"><a href="#扫码无套路关注我的CSDN博客-blush" class="headerlink" title="扫码无套路关注我的CSDN博客:blush:"></a>扫码无套路关注我的<a href="https://blog.csdn.net/qq_43270074?orderby=UpdateTime" target="_blank" rel="noopener">CSDN</a>博客:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/CSDN.png" width=""></p>]]></content>
+    
+    <summary type="html">
+    
+      解决在 Eclipse 新建web项目没有自动生成 web.xml 和在新建 servlet 的时候自动生成 web.xml 配置
+    
+    </summary>
+    
+      <category term="eclipse" scheme="http://freestylefly.github.io/categories/eclipse/"/>
+    
+    
+      <category term="xml" scheme="http://freestylefly.github.io/tags/xml/"/>
+    
+      <category term="Eclipse" scheme="http://freestylefly.github.io/tags/Eclipse/"/>
+    
+  </entry>
+  
+  <entry>
     <title>N个人站圈报数算法问题</title>
     <link href="http://freestylefly.github.io/2019/04/13/N%E4%B8%AA%E4%BA%BA%E7%AB%99%E5%9C%88%E6%8A%A5%E6%95%B0%E7%AE%97%E6%B3%95%E9%97%AE%E9%A2%98/"/>
     <id>http://freestylefly.github.io/2019/04/13/N个人站圈报数算法问题/</id>
@@ -309,28 +333,6 @@
   </entry>
   
   <entry>
-    <title>Struts2 中的OGNL和值栈ValueStack</title>
-    <link href="http://freestylefly.github.io/2019/04/13/Struts2%E4%B8%AD%E7%9A%84OGNL%E5%92%8C%E5%80%BC%E6%A0%88ValueStack/"/>
-    <id>http://freestylefly.github.io/2019/04/13/Struts2中的OGNL和值栈ValueStack/</id>
-    <published>2019-04-12T16:00:00.000Z</published>
-    <updated>2019-10-04T15:43:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>本系列文章在 <a href="https://github.com/freestylefly/javaStudy" target="_blank" rel="noopener">https://github.com/freestylefly/javaStudy</a> 持(huan)续(ying)更(jia)新(入)中，欢迎有兴趣的童鞋们关注。</p><h1 id="一、OGNL"><a href="#一、OGNL" class="headerlink" title="一、OGNL"></a>一、OGNL</h1><h2 id="1、什么是OGNL"><a href="#1、什么是OGNL" class="headerlink" title="1、什么是OGNL"></a>1、什么是OGNL</h2><p>是一种功能强大的表达式语言，通过他可以获取对象的任意属性和方法，同时能实现必要的类型转换，比EL表达式更加的强大，可以应用在页面，Action以及配置文件中</p><h2 id="2、OGNL的作用"><a href="#2、OGNL的作用" class="headerlink" title="2、OGNL的作用"></a>2、OGNL的作用</h2><ul><li>对象方法调用</li><li>类静态方法调用</li><li>赋值操作和表达式串联</li><li>访问OGNL上下文</li><li>操作集合对象</li></ul><h2 id="3、OGNL的要素"><a href="#3、OGNL的要素" class="headerlink" title="3、OGNL的要素"></a>3、OGNL的要素</h2><ul><li>表达式</li><li>跟对象root</li><li>context对象</li></ul><h1 id="二、值栈的概述"><a href="#二、值栈的概述" class="headerlink" title="二、值栈的概述"></a>二、值栈的概述</h1><h2 id="1、什么是值栈"><a href="#1、什么是值栈" class="headerlink" title="1、什么是值栈"></a>1、什么是值栈</h2><p>ValueStack是Struts2的一个接口，OgnlValueStatck是实现类，客户端发送一个请求就会创建一个Action实例，同时会创建一个OgnlValueStatck实例，ValueStack其实类似于数据中转站，Struts中的数据都保存在值栈中，贯穿Action的生命周期，值栈中的数据可在JSP、Action、配置文件中使用</p><h2 id="2、值栈的内部结构"><a href="#2、值栈的内部结构" class="headerlink" title="2、值栈的内部结构"></a>2、值栈的内部结构</h2><p>值栈的内部有两个主要区域，</p><p>1）root区域</p><p>实际上是一个ArrayList集合，放的是对象，实现压栈和出栈功能，拥有栈的特点，先进后出，后进先出，最后压进栈的数据再栈顶，称之为对象栈，取的时候不用加#号</p><p>通常操作值栈，就是值操作root区域，<s:debug>可查看值栈的内部结构</s:debug></p><p>2）context区域</p><p>他是一个map结构，存放的是一些引用，request、session、等，其中attr代表该Map按如下顺序检索某个属性：request、session、application，其中使用&lt;s:iterator时，var存放的是放在context中的，取的时候要加#号</p><h2 id="3、ActionContext和ValueStatck的关系"><a href="#3、ActionContext和ValueStatck的关系" class="headerlink" title="3、ActionContext和ValueStatck的关系"></a>3、ActionContext和ValueStatck的关系</h2><p>通过查询源码可以知道，在创建ActionContext的时候，会创建ValueStatck对象，将ValueStatck独享给ActionContext，ActionContext中有一个ValueStatck的引用，ValueStatck中也有一个ActionContext的引用，ActionContext获取servlet的时候，依赖值栈了。</p><h2 id="4、如何获取值栈对象"><a href="#4、如何获取值栈对象" class="headerlink" title="4、如何获取值栈对象"></a>4、如何获取值栈对象</h2><p><img src="https://img-blog.csdnimg.cn/20190208165701231.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>两种方式，获取的是同一个值栈</p><h2 id="5、向值栈存数据"><a href="#5、向值栈存数据" class="headerlink" title="5、向值栈存数据"></a>5、向值栈存数据</h2><p><img src="https://img-blog.csdnimg.cn/20190208165733543.png" alt="在这里插入图片描述"></p><p>使用第一种方式的原因是因为，默认情况下Action会被压入到值栈中，所以Action中的属性也会被放入值栈，第二种方式，会压栈，即每一次push都会将其放入栈顶</p><h2 id="6、从值栈中获取数据"><a href="#6、从值栈中获取数据" class="headerlink" title="6、从值栈中获取数据"></a>6、从值栈中获取数据</h2><p>1）采用提供get方法的方式获取</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:property value=&quot;user.cust_name&quot;/&gt;</span><br></pre></td></tr></table></figure><p>2）采用valueStatck本身方法方式存入获取</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:property value=&quot;cust_name&quot;/&gt;</span><br></pre></td></tr></table></figure><p>3）获取值栈中集合的数据</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:property value=&quot;list[0].cust_name&quot;/&gt;</span><br></pre></td></tr></table></figure><p>4）获取context区域存放的数据</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:property value=&quot;#request.cust_name&quot;/&gt;</span><br></pre></td></tr></table></figure><h2 id="7-、EL为何能访问值栈中的数据"><a href="#7-、EL为何能访问值栈中的数据" class="headerlink" title="7 、EL为何能访问值栈中的数据"></a>7 、EL为何能访问值栈中的数据</h2><p>因为Struts2的底层对request.getAttribute()方法进行了增强，找到    找到就返回，没有找到就会从值栈中去找</p><h1 id="三、OGNL特殊字符"><a href="#三、OGNL特殊字符" class="headerlink" title="三、OGNL特殊字符"></a>三、OGNL特殊字符</h1><h2 id="1、-号"><a href="#1、-号" class="headerlink" title="1、#号"></a>1、#号</h2><p>1）获取context中的数据，在使用标签遍历的时候var中的值</p><p>2）构建Map集合</p><p>默认Struts2框架会识别</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;aa&quot;,&quot;bb&quot;,&quot;cc&quot;&#125;为list集合</span><br><span class="line">&#123;&quot;aa&quot;:&quot;11&quot;,&quot;bb&quot;:&quot;22&quot;&#125;为map集合</span><br></pre></td></tr></table></figure><p>当使用标签的时候，可以用#构建map集合</p><h2 id="2、-号"><a href="#2、-号" class="headerlink" title="2、%号"></a>2、%号</h2><p>强制解析OGNL，Struts2的有些便签不能识别OGNL，需要使用%强制解析OGNL</p><h2 id="3、-号"><a href="#3、-号" class="headerlink" title="3、$号"></a>3、$号</h2><p>1）在配置文件中使用</p><p>A、属性文件：国际化的地方</p><p>B：XML：如文件下载的时候使用</p><hr><h1 id="本文章已同步至我的GitHub仓库：Javastudy-期待您的加入-blush"><a href="#本文章已同步至我的GitHub仓库：Javastudy-期待您的加入-blush" class="headerlink" title="本文章已同步至我的GitHub仓库：Javastudy,期待您的加入:blush:"></a>本文章已同步至我的GitHub仓库：<a href="https://github.com/freestylefly/javaStudy" target="_blank" rel="noopener">Javastudy</a>,期待您的加入:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/github.jpg" width=""></p><h1 id="本文章已同步至苍何的个人博客-可以直接在博客上留言哦-blush"><a href="#本文章已同步至苍何的个人博客-可以直接在博客上留言哦-blush" class="headerlink" title="本文章已同步至苍何的个人博客,可以直接在博客上留言哦:blush:"></a>本文章已同步至<a href="https://freestylefly.github.io/">苍何的个人博客</a>,可以直接在博客上留言哦:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/myblog..png" width=""></p><h1 id="来我的微信公众号玩耍呗-blush"><a href="#来我的微信公众号玩耍呗-blush" class="headerlink" title="来我的微信公众号玩耍呗:blush:"></a>来我的微信公众号玩耍呗:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/weixingongzhonghao.jpg" width=""></p><h1 id="扫码无套路关注我的CSDN博客-blush"><a href="#扫码无套路关注我的CSDN博客-blush" class="headerlink" title="扫码无套路关注我的CSDN博客:blush:"></a>扫码无套路关注我的<a href="https://blog.csdn.net/qq_43270074?orderby=UpdateTime" target="_blank" rel="noopener">CSDN</a>博客:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/CSDN.png" width=""></p>]]></content>
-    
-    <summary type="html">
-    
-      Struts2 中的OGNL和值栈ValueStack
-    
-    </summary>
-    
-      <category term="JavaEE框架" scheme="http://freestylefly.github.io/categories/JavaEE%E6%A1%86%E6%9E%B6/"/>
-    
-    
-      <category term="Struts2" scheme="http://freestylefly.github.io/tags/Struts2/"/>
-    
-  </entry>
-  
-  <entry>
     <title>c3p0 连接池的用法</title>
     <link href="http://freestylefly.github.io/2019/04/13/c3p0%E8%BF%9E%E6%8E%A5%E6%B1%A0%E7%9A%84%E7%94%A8%E6%B3%95/"/>
     <id>http://freestylefly.github.io/2019/04/13/c3p0连接池的用法/</id>
@@ -349,6 +351,28 @@
     
     
       <category term="c3p0" scheme="http://freestylefly.github.io/tags/c3p0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Struts2 中的OGNL和值栈ValueStack</title>
+    <link href="http://freestylefly.github.io/2019/04/13/Struts2%E4%B8%AD%E7%9A%84OGNL%E5%92%8C%E5%80%BC%E6%A0%88ValueStack/"/>
+    <id>http://freestylefly.github.io/2019/04/13/Struts2中的OGNL和值栈ValueStack/</id>
+    <published>2019-04-12T16:00:00.000Z</published>
+    <updated>2019-10-04T15:43:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>本系列文章在 <a href="https://github.com/freestylefly/javaStudy" target="_blank" rel="noopener">https://github.com/freestylefly/javaStudy</a> 持(huan)续(ying)更(jia)新(入)中，欢迎有兴趣的童鞋们关注。</p><h1 id="一、OGNL"><a href="#一、OGNL" class="headerlink" title="一、OGNL"></a>一、OGNL</h1><h2 id="1、什么是OGNL"><a href="#1、什么是OGNL" class="headerlink" title="1、什么是OGNL"></a>1、什么是OGNL</h2><p>是一种功能强大的表达式语言，通过他可以获取对象的任意属性和方法，同时能实现必要的类型转换，比EL表达式更加的强大，可以应用在页面，Action以及配置文件中</p><h2 id="2、OGNL的作用"><a href="#2、OGNL的作用" class="headerlink" title="2、OGNL的作用"></a>2、OGNL的作用</h2><ul><li>对象方法调用</li><li>类静态方法调用</li><li>赋值操作和表达式串联</li><li>访问OGNL上下文</li><li>操作集合对象</li></ul><h2 id="3、OGNL的要素"><a href="#3、OGNL的要素" class="headerlink" title="3、OGNL的要素"></a>3、OGNL的要素</h2><ul><li>表达式</li><li>跟对象root</li><li>context对象</li></ul><h1 id="二、值栈的概述"><a href="#二、值栈的概述" class="headerlink" title="二、值栈的概述"></a>二、值栈的概述</h1><h2 id="1、什么是值栈"><a href="#1、什么是值栈" class="headerlink" title="1、什么是值栈"></a>1、什么是值栈</h2><p>ValueStack是Struts2的一个接口，OgnlValueStatck是实现类，客户端发送一个请求就会创建一个Action实例，同时会创建一个OgnlValueStatck实例，ValueStack其实类似于数据中转站，Struts中的数据都保存在值栈中，贯穿Action的生命周期，值栈中的数据可在JSP、Action、配置文件中使用</p><h2 id="2、值栈的内部结构"><a href="#2、值栈的内部结构" class="headerlink" title="2、值栈的内部结构"></a>2、值栈的内部结构</h2><p>值栈的内部有两个主要区域，</p><p>1）root区域</p><p>实际上是一个ArrayList集合，放的是对象，实现压栈和出栈功能，拥有栈的特点，先进后出，后进先出，最后压进栈的数据再栈顶，称之为对象栈，取的时候不用加#号</p><p>通常操作值栈，就是值操作root区域，<s:debug>可查看值栈的内部结构</s:debug></p><p>2）context区域</p><p>他是一个map结构，存放的是一些引用，request、session、等，其中attr代表该Map按如下顺序检索某个属性：request、session、application，其中使用&lt;s:iterator时，var存放的是放在context中的，取的时候要加#号</p><h2 id="3、ActionContext和ValueStatck的关系"><a href="#3、ActionContext和ValueStatck的关系" class="headerlink" title="3、ActionContext和ValueStatck的关系"></a>3、ActionContext和ValueStatck的关系</h2><p>通过查询源码可以知道，在创建ActionContext的时候，会创建ValueStatck对象，将ValueStatck独享给ActionContext，ActionContext中有一个ValueStatck的引用，ValueStatck中也有一个ActionContext的引用，ActionContext获取servlet的时候，依赖值栈了。</p><h2 id="4、如何获取值栈对象"><a href="#4、如何获取值栈对象" class="headerlink" title="4、如何获取值栈对象"></a>4、如何获取值栈对象</h2><p><img src="https://img-blog.csdnimg.cn/20190208165701231.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p><p>两种方式，获取的是同一个值栈</p><h2 id="5、向值栈存数据"><a href="#5、向值栈存数据" class="headerlink" title="5、向值栈存数据"></a>5、向值栈存数据</h2><p><img src="https://img-blog.csdnimg.cn/20190208165733543.png" alt="在这里插入图片描述"></p><p>使用第一种方式的原因是因为，默认情况下Action会被压入到值栈中，所以Action中的属性也会被放入值栈，第二种方式，会压栈，即每一次push都会将其放入栈顶</p><h2 id="6、从值栈中获取数据"><a href="#6、从值栈中获取数据" class="headerlink" title="6、从值栈中获取数据"></a>6、从值栈中获取数据</h2><p>1）采用提供get方法的方式获取</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:property value=&quot;user.cust_name&quot;/&gt;</span><br></pre></td></tr></table></figure><p>2）采用valueStatck本身方法方式存入获取</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:property value=&quot;cust_name&quot;/&gt;</span><br></pre></td></tr></table></figure><p>3）获取值栈中集合的数据</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:property value=&quot;list[0].cust_name&quot;/&gt;</span><br></pre></td></tr></table></figure><p>4）获取context区域存放的数据</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;s:property value=&quot;#request.cust_name&quot;/&gt;</span><br></pre></td></tr></table></figure><h2 id="7-、EL为何能访问值栈中的数据"><a href="#7-、EL为何能访问值栈中的数据" class="headerlink" title="7 、EL为何能访问值栈中的数据"></a>7 、EL为何能访问值栈中的数据</h2><p>因为Struts2的底层对request.getAttribute()方法进行了增强，找到    找到就返回，没有找到就会从值栈中去找</p><h1 id="三、OGNL特殊字符"><a href="#三、OGNL特殊字符" class="headerlink" title="三、OGNL特殊字符"></a>三、OGNL特殊字符</h1><h2 id="1、-号"><a href="#1、-号" class="headerlink" title="1、#号"></a>1、#号</h2><p>1）获取context中的数据，在使用标签遍历的时候var中的值</p><p>2）构建Map集合</p><p>默认Struts2框架会识别</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;&quot;aa&quot;,&quot;bb&quot;,&quot;cc&quot;&#125;为list集合</span><br><span class="line">&#123;&quot;aa&quot;:&quot;11&quot;,&quot;bb&quot;:&quot;22&quot;&#125;为map集合</span><br></pre></td></tr></table></figure><p>当使用标签的时候，可以用#构建map集合</p><h2 id="2、-号"><a href="#2、-号" class="headerlink" title="2、%号"></a>2、%号</h2><p>强制解析OGNL，Struts2的有些便签不能识别OGNL，需要使用%强制解析OGNL</p><h2 id="3、-号"><a href="#3、-号" class="headerlink" title="3、$号"></a>3、$号</h2><p>1）在配置文件中使用</p><p>A、属性文件：国际化的地方</p><p>B：XML：如文件下载的时候使用</p><hr><h1 id="本文章已同步至我的GitHub仓库：Javastudy-期待您的加入-blush"><a href="#本文章已同步至我的GitHub仓库：Javastudy-期待您的加入-blush" class="headerlink" title="本文章已同步至我的GitHub仓库：Javastudy,期待您的加入:blush:"></a>本文章已同步至我的GitHub仓库：<a href="https://github.com/freestylefly/javaStudy" target="_blank" rel="noopener">Javastudy</a>,期待您的加入:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/github.jpg" width=""></p><h1 id="本文章已同步至苍何的个人博客-可以直接在博客上留言哦-blush"><a href="#本文章已同步至苍何的个人博客-可以直接在博客上留言哦-blush" class="headerlink" title="本文章已同步至苍何的个人博客,可以直接在博客上留言哦:blush:"></a>本文章已同步至<a href="https://freestylefly.github.io/">苍何的个人博客</a>,可以直接在博客上留言哦:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/myblog..png" width=""></p><h1 id="来我的微信公众号玩耍呗-blush"><a href="#来我的微信公众号玩耍呗-blush" class="headerlink" title="来我的微信公众号玩耍呗:blush:"></a>来我的微信公众号玩耍呗:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/weixingongzhonghao.jpg" width=""></p><h1 id="扫码无套路关注我的CSDN博客-blush"><a href="#扫码无套路关注我的CSDN博客-blush" class="headerlink" title="扫码无套路关注我的CSDN博客:blush:"></a>扫码无套路关注我的<a href="https://blog.csdn.net/qq_43270074?orderby=UpdateTime" target="_blank" rel="noopener">CSDN</a>博客:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/CSDN.png" width=""></p>]]></content>
+    
+    <summary type="html">
+    
+      Struts2 中的OGNL和值栈ValueStack
+    
+    </summary>
+    
+      <category term="JavaEE框架" scheme="http://freestylefly.github.io/categories/JavaEE%E6%A1%86%E6%9E%B6/"/>
+    
+    
+      <category term="Struts2" scheme="http://freestylefly.github.io/tags/Struts2/"/>
     
   </entry>
   
@@ -423,54 +447,6 @@
   </entry>
   
   <entry>
-    <title>云服务器安装 oracle 修改 IP 地址监听器报错问题</title>
-    <link href="http://freestylefly.github.io/2019/04/13/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85oracle%E4%BF%AE%E6%94%B9IP%E5%9C%B0%E5%9D%80%E7%9B%91%E5%90%AC%E5%99%A8%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/"/>
-    <id>http://freestylefly.github.io/2019/04/13/云服务器安装oracle修改IP地址监听器报错问题/</id>
-    <published>2019-04-12T16:00:00.000Z</published>
-    <updated>2019-10-04T15:43:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>本系列文章在 <a href="https://github.com/freestylefly/javaStudy" target="_blank" rel="noopener">https://github.com/freestylefly/javaStudy</a> 持(huan)续(ying)更(jia)新(ru)中，欢迎有兴趣的童鞋们关注。</p><p>当在云服务器中安装oracle时，按照一般的安装步骤安装后，需要修改两个文件的iIP地址才可以在本机进行访问，修改注意点：<br>监听器部分不要改成服务器的公网IP，要改成服务器的计算机名字才可以，两个配置文件夹均要修改<br>tnsnames.ora文件修改：<br><img src="https://img-blog.csdnimg.cn/20190106113038465.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>listener.ora：<br>其中host=那里也是改成计算机名而不是公网ip，然后分别重启监听器和orclservice服务就好，然后将tnsnames.ora文件拷贝到本机的E:\Java\Oracle\InstantClient\InstantClient目录下满。</p><p>如果监听器设置的是IP地址而不是计算机名字的话监听器会不起作用，甚至会启动不了服务。</p><hr><h1 id="本文章已同步至我的GitHub仓库：Javastudy-期待您的加入-blush"><a href="#本文章已同步至我的GitHub仓库：Javastudy-期待您的加入-blush" class="headerlink" title="本文章已同步至我的GitHub仓库：Javastudy,期待您的加入:blush:"></a>本文章已同步至我的GitHub仓库：<a href="https://github.com/freestylefly/javaStudy" target="_blank" rel="noopener">Javastudy</a>,期待您的加入:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/github.jpg" width=""></p><h1 id="本文章已同步至苍何的个人博客-可以直接在博客上留言哦-blush"><a href="#本文章已同步至苍何的个人博客-可以直接在博客上留言哦-blush" class="headerlink" title="本文章已同步至苍何的个人博客,可以直接在博客上留言哦:blush:"></a>本文章已同步至<a href="https://freestylefly.github.io/">苍何的个人博客</a>,可以直接在博客上留言哦:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/myblog..png" width=""></p><h1 id="来我的微信公众号玩耍呗-blush"><a href="#来我的微信公众号玩耍呗-blush" class="headerlink" title="来我的微信公众号玩耍呗:blush:"></a>来我的微信公众号玩耍呗:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/weixingongzhonghao.jpg" width=""></p><h1 id="扫码无套路关注我的CSDN博客-blush"><a href="#扫码无套路关注我的CSDN博客-blush" class="headerlink" title="扫码无套路关注我的CSDN博客:blush:"></a>扫码无套路关注我的<a href="https://blog.csdn.net/qq_43270074?orderby=UpdateTime" target="_blank" rel="noopener">CSDN</a>博客:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/CSDN.png" width=""></p>]]></content>
-    
-    <summary type="html">
-    
-      云服务器安装 oracle 修改 IP 地址监听器报错问题
-    
-    </summary>
-    
-      <category term="数据库" scheme="http://freestylefly.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-      <category term="云服务器" scheme="http://freestylefly.github.io/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-      <category term="oracle" scheme="http://freestylefly.github.io/tags/oracle/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>解决两个 Android 模拟器之间无法网络通信的问题</title>
-    <link href="http://freestylefly.github.io/2019/04/13/%E5%85%B3%E4%BA%8EGitHub%E7%9A%84%E4%B8%80%E4%BA%9B%E7%BB%8F%E9%AA%8C%E6%80%BB%E7%BB%93%EF%BC%88%E5%8C%85%E6%8B%ACREADME%E6%96%87%E4%BB%B6%E7%9A%84%E7%BC%96%E5%86%99%E7%9B%AE%E5%BD%95%E7%9A%84%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%EF%BC%89/"/>
-    <id>http://freestylefly.github.io/2019/04/13/关于GitHub的一些经验总结（包括README文件的编写目录的自动生成）/</id>
-    <published>2019-04-12T16:00:00.000Z</published>
-    <updated>2019-10-04T15:43:08.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>本系列文章在 <a href="https://github.com/freestylefly/javaStudy" target="_blank" rel="noopener">https://github.com/freestylefly/javaStudy</a> 持(huan)续(ying)更(jia)新(ru)中，欢迎有兴趣的童鞋们关注。</p><h2 id="一、README-md上传图片"><a href="#一、README-md上传图片" class="headerlink" title="一、README.md上传图片"></a>一、README.md上传图片</h2><p>需要注意的是一定要图片先上传到图床，我这边用的有两个<br>1、<a href="https://imgchr.com/" target="_blank" rel="noopener">图床</a><br>2、<a href="https://www.qiniu.com/" target="_blank" rel="noopener">七牛云</a><br>关于七牛云我会出另外一篇文章细说<br>注意：不管是截图的图片还是本地上传的图片都要上传到图床上，，然后复制URL才可以在GitHub中显示</p><h2 id="二、README-md自动生成目录"><a href="#二、README-md自动生成目录" class="headerlink" title="二、README.md自动生成目录"></a>二、README.md自动生成目录</h2><p>不能用Markdown的【TCG】自动生成目录，在GitHub上是不显示的<br>我的办法是：<br>1、<a href="https://sleepeatcode.com/ghtoc" target="_blank" rel="noopener">点开网站</a><br>2、将GitHub的README.md的URL复制，自动生成目录，但是这是不全的<br>3、复制目录到README.md文件，需要在后面的括号处加上#文件名，这个是我能找到的比较简单的办法了，比手动敲简单<br><img src="https://img-blog.csdnimg.cn/20190331070938177.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>特别注意：#后面不要加任何特殊字符和数字，目录不要编号，否则不成功，内部跳转不成功的很大部分原因也是因为内部编号了。</p><h2 id="gt-三、我的GitHub"><a href="#gt-三、我的GitHub" class="headerlink" title="&gt;三、我的GitHub"></a>&gt;三、我的GitHub</h2><p><a href="https://github.com/freestylefly/javaStudy#ajax" target="_blank" rel="noopener">https://github.com/freestylefly/javaStudy#ajax</a><br>期待你的加入！，有什么不懂的可以在GitHub上留言问我。</p><hr><h1 id="本文章已同步至我的GitHub仓库：Javastudy-期待您的加入-blush"><a href="#本文章已同步至我的GitHub仓库：Javastudy-期待您的加入-blush" class="headerlink" title="本文章已同步至我的GitHub仓库：Javastudy,期待您的加入:blush:"></a>本文章已同步至我的GitHub仓库：<a href="https://github.com/freestylefly/javaStudy" target="_blank" rel="noopener">Javastudy</a>,期待您的加入:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/github.jpg" width=""></p><h1 id="本文章已同步至苍何的个人博客-可以直接在博客上留言哦-blush"><a href="#本文章已同步至苍何的个人博客-可以直接在博客上留言哦-blush" class="headerlink" title="本文章已同步至苍何的个人博客,可以直接在博客上留言哦:blush:"></a>本文章已同步至<a href="https://freestylefly.github.io/">苍何的个人博客</a>,可以直接在博客上留言哦:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/myblog..png" width=""></p><h1 id="来我的微信公众号玩耍呗-blush"><a href="#来我的微信公众号玩耍呗-blush" class="headerlink" title="来我的微信公众号玩耍呗:blush:"></a>来我的微信公众号玩耍呗:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/weixingongzhonghao.jpg" width=""></p><h1 id="扫码无套路关注我的CSDN博客-blush"><a href="#扫码无套路关注我的CSDN博客-blush" class="headerlink" title="扫码无套路关注我的CSDN博客:blush:"></a>扫码无套路关注我的<a href="https://blog.csdn.net/qq_43270074?orderby=UpdateTime" target="_blank" rel="noopener">CSDN</a>博客:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/CSDN.png" width=""></p>]]></content>
-    
-    <summary type="html">
-    
-      如何配置，让同一台 PC 上的两个 Android 模拟器之间能够使用 TCP 通信？
-    
-    </summary>
-    
-      <category term="Android" scheme="http://freestylefly.github.io/categories/Android/"/>
-    
-    
-      <category term="Git" scheme="http://freestylefly.github.io/tags/Git/"/>
-    
-      <category term="GitHub" scheme="http://freestylefly.github.io/tags/GitHub/"/>
-    
-  </entry>
-  
-  <entry>
     <title>webstorm 设置黑色主题及相关的编码和显示设置</title>
     <link href="http://freestylefly.github.io/2019/04/13/webstorm%E8%AE%BE%E7%BD%AE%E9%BB%91%E8%89%B2%E4%B8%BB%E9%A2%98%E5%8F%8A%E7%9B%B8%E5%85%B3%E7%9A%84%E7%BC%96%E7%A0%81%E5%92%8C%E6%98%BE%E7%A4%BA%E8%AE%BE%E7%BD%AE/"/>
     <id>http://freestylefly.github.io/2019/04/13/webstorm设置黑色主题及相关的编码和显示设置/</id>
@@ -491,6 +467,30 @@
       <category term="webstorm" scheme="http://freestylefly.github.io/tags/webstorm/"/>
     
       <category term="主题" scheme="http://freestylefly.github.io/tags/%E4%B8%BB%E9%A2%98/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>云服务器安装 oracle 修改 IP 地址监听器报错问题</title>
+    <link href="http://freestylefly.github.io/2019/04/13/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85oracle%E4%BF%AE%E6%94%B9IP%E5%9C%B0%E5%9D%80%E7%9B%91%E5%90%AC%E5%99%A8%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/"/>
+    <id>http://freestylefly.github.io/2019/04/13/云服务器安装oracle修改IP地址监听器报错问题/</id>
+    <published>2019-04-12T16:00:00.000Z</published>
+    <updated>2019-10-04T15:43:08.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>本系列文章在 <a href="https://github.com/freestylefly/javaStudy" target="_blank" rel="noopener">https://github.com/freestylefly/javaStudy</a> 持(huan)续(ying)更(jia)新(ru)中，欢迎有兴趣的童鞋们关注。</p><p>当在云服务器中安装oracle时，按照一般的安装步骤安装后，需要修改两个文件的iIP地址才可以在本机进行访问，修改注意点：<br>监听器部分不要改成服务器的公网IP，要改成服务器的计算机名字才可以，两个配置文件夹均要修改<br>tnsnames.ora文件修改：<br><img src="https://img-blog.csdnimg.cn/20190106113038465.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjcwMDc0,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>listener.ora：<br>其中host=那里也是改成计算机名而不是公网ip，然后分别重启监听器和orclservice服务就好，然后将tnsnames.ora文件拷贝到本机的E:\Java\Oracle\InstantClient\InstantClient目录下满。</p><p>如果监听器设置的是IP地址而不是计算机名字的话监听器会不起作用，甚至会启动不了服务。</p><hr><h1 id="本文章已同步至我的GitHub仓库：Javastudy-期待您的加入-blush"><a href="#本文章已同步至我的GitHub仓库：Javastudy-期待您的加入-blush" class="headerlink" title="本文章已同步至我的GitHub仓库：Javastudy,期待您的加入:blush:"></a>本文章已同步至我的GitHub仓库：<a href="https://github.com/freestylefly/javaStudy" target="_blank" rel="noopener">Javastudy</a>,期待您的加入:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/github.jpg" width=""></p><h1 id="本文章已同步至苍何的个人博客-可以直接在博客上留言哦-blush"><a href="#本文章已同步至苍何的个人博客-可以直接在博客上留言哦-blush" class="headerlink" title="本文章已同步至苍何的个人博客,可以直接在博客上留言哦:blush:"></a>本文章已同步至<a href="https://freestylefly.github.io/">苍何的个人博客</a>,可以直接在博客上留言哦:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/myblog..png" width=""></p><h1 id="来我的微信公众号玩耍呗-blush"><a href="#来我的微信公众号玩耍呗-blush" class="headerlink" title="来我的微信公众号玩耍呗:blush:"></a>来我的微信公众号玩耍呗:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/weixingongzhonghao.jpg" width=""></p><h1 id="扫码无套路关注我的CSDN博客-blush"><a href="#扫码无套路关注我的CSDN博客-blush" class="headerlink" title="扫码无套路关注我的CSDN博客:blush:"></a>扫码无套路关注我的<a href="https://blog.csdn.net/qq_43270074?orderby=UpdateTime" target="_blank" rel="noopener">CSDN</a>博客:blush:</h1><p><img src="http://pp8g2fyug.bkt.clouddn.com/CSDN.png" width=""></p>]]></content>
+    
+    <summary type="html">
+    
+      云服务器安装 oracle 修改 IP 地址监听器报错问题
+    
+    </summary>
+    
+      <category term="数据库" scheme="http://freestylefly.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+      <category term="云服务器" scheme="http://freestylefly.github.io/tags/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="oracle" scheme="http://freestylefly.github.io/tags/oracle/"/>
     
   </entry>
   
